@@ -1,0 +1,43 @@
+{
+    "name": "HelloWorld.AppSource",
+    "memoryLimit": "6G",
+    "installApps": "",
+    "previousApps": "https://businesscentralapps.azureedge.net/helloworld-appsource/latest/apps.zip",
+    "appFolders": "app,base",
+    "testFolders": "test",
+    "installTestFramework": true,
+    "installTestLibraries": false,
+    "installPerformanceToolkit": false,
+    "doNotSignApps": true,
+    "enableCodeCop": false,
+    "enableAppSourceCop": true,
+    "enablePerTenantExtensionCop": false,
+    "enableUICop": true,
+    "appSourceCopMandatoryAffixes": "hw_",
+    "appSourceCopSupportedCountries": "us,dk,gb",
+    "additionalCountries": "dk,gb",
+    "bcContainerHelperVersion": "preview",
+    "vaultNameForLocal": "BuildVariables",
+    "versions": [
+        {
+            "version": "ci",
+            "artifact": "//17.0.17126.17791/us",
+            "additionalCountries": "",
+            "cacheImage": true,
+            "CreateRuntimePackages": true
+        },
+        {
+            "version": "current",
+            "artifact": "///us/Current",
+            "CreateRuntimePackages": true
+        },
+        {
+            "version": "nextmajor",
+            "artifact": "///us/NextMajor/{INSIDERSASTOKEN}"
+        },
+        {
+            "version": "nextminor",
+            "artifact": "///us/NextMinor/{INSIDERSASTOKEN}"
+        }
+    ]
+}

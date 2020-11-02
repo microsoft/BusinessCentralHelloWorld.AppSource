@@ -1,0 +1,34 @@
+{
+    "id":  "00000000-0000-0000-0000-000000000003",
+    "name":  "Default Base App Name",
+    "publisher":  "Default Publisher",
+    "brief":  "Hello World Base for AppSource",
+    "description":  "Hello World Base sample app for AppSource",
+    "version":  "2.0.0.0",
+    "privacyStatement":  "https://dev.azure.com/businesscentralapps/HelloWorld.AppSource",
+    "EULA":  "https://dev.azure.com/businesscentralapps/HelloWorld.AppSource",
+    "help":  "https://dev.azure.com/businesscentralapps/HelloWorld.AppSource",
+    "url":  "https://dev.azure.com/businesscentralapps/HelloWorld.AppSource",
+    "contextSensitiveHelpUrl":  "https://dev.azure.com/businesscentralapps/HelloWorld.AppSource",
+    "logo":  "helloworld_256x240.png",
+    "dependencies":  [
+
+                     ],
+    "screenshots":  [
+
+                    ],
+    "application":  "17.0.0.0",
+    "platform":  "17.0.0.0",
+    "idRanges":  [
+                     {
+                         "from":  70074169,
+                         "to":  70074218
+                     }
+                 ],
+    "runtime":  "6.0",
+    "features":  [
+                     "TranslationFile"
+                 ],
+    "showMyCode":  true,
+    "target":  "Cloud"
+}

@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "base"
+		},
+		{
+			"path": "app"
+		},
+		{
+			"path": "test"
+		},
+		{
+			"path": "scripts"
+		}
+	],
+	"settings": {}
+}
