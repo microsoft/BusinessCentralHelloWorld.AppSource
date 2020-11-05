@@ -36,7 +36,7 @@ jobs:
     inputs:
       targetType: filePath
       filePath: 'scripts\DevOps-Pipeline.ps1'
-      arguments: '-version "$(version)" -appBuild $(appBuild) -appRevision $(appRevision)'
+      arguments: '-environment "AzureDevOps" -version "$(version)" -appBuild $(appBuild) -appRevision $(appRevision)'
       failOnStderr: true
 
   - task: PublishTestResults@2
@@ -53,4 +53,5 @@ jobs:
     inputs:
       targetType: filePath
       filePath: 'scripts\Cleanup.ps1'
+      arguments: '-environment "AzureDevOps"'
       failOnStderr: false

@@ -4,7 +4,7 @@
 )
 
 $baseFolder = (Get-Item (Join-Path $PSScriptRoot "..")).FullName
-. (Join-Path $PSScriptRoot "Read-Settings.ps1") -version $version
+. (Join-Path $PSScriptRoot "Read-Settings.ps1") -environment 'Local' -version $version
 . (Join-Path $PSScriptRoot "Install-BcContainerHelper.ps1") -bcContainerHelperVersion $bcContainerHelperVersion -genericImageName $genericImageName
 
 if (("$vaultNameForLocal" -eq "") -or !(Get-AzKeyVault -VaultName $vaultNameForLocal)) {

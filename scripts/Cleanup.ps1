@@ -1,4 +1,11 @@
-﻿. (Join-Path $PSScriptRoot "Read-Settings.ps1")
+﻿Param(
+    [Parameter(Mandatory=$false)]
+    [ValidateSet('Local', 'AzureDevOps', 'GithubActions', 'GitLab')]
+    [string] $environment = 'Local'
+)
+
+. (Join-Path $PSScriptRoot "Read-Settings.ps1") -environment $environment
+
 if ("$AgentName" -ne "Hosted Agent" -and "$AgentName" -notlike "Azure Pipelines*") {
     . (Join-Path $PSScriptRoot "Install-BcContainerHelper.ps1") -bcContainerHelperVersion $bcContainerHelperVersion
 
