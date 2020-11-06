@@ -11,6 +11,9 @@
 		},
 		{
 			"path": "scripts"
+		},
+		{
+			"path": ".azureDevOps"
 		}
 	],
 	"settings": {}
