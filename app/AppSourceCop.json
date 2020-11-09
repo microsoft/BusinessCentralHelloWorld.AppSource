@@ -1,9 +1,0 @@
-{
-    "mandatoryAffixes":  [
-                             "hw_"
-                         ],
-    "supportedCountries":  [
-                               "dk",
-                               "us"
-                           ]
-}
